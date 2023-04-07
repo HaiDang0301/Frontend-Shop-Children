@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
+import PropsItems from "../../../props/PropsHome/PropsHome";
 const cx = classNames.bind(styles);
 function Home() {
   return (
@@ -33,14 +34,16 @@ function Home() {
               </div>
             </div>
             <div className={cx("wooden")}>
-              <div className={cx("main")}>
+              <div className={cx("main-wooden")}>
                 <div className={cx("nav-wooden")}>
                   <nav className={cx("nav-link-wooden")}>
                     <div className={cx("title-wooden")}>
-                      <h4>Stuffed Animals</h4>
+                      <h4>Wooden Animals</h4>
                     </div>
-                    <div className={cx("button-wooden")}>
-                      <Link to="">Shop now</Link>
+                    <div className={cx("btn")}>
+                      <div className={cx("button-wooden")}>
+                        <Link to="">Shop now</Link>
+                      </div>
                     </div>
                   </nav>
                   <div className={cx("img-wooden")}>
@@ -54,6 +57,16 @@ function Home() {
             </div>
           </div>
         </div>
+        <PropsItems
+          title="Stuffed Animals"
+          category="Stuffed Animals"
+          link="/catalog/category/stuffed-animals"
+        ></PropsItems>
+        <PropsItems
+          title="Wooden Toys"
+          category="Wooden Toys"
+          link="/catalog/category/wooden-toys"
+        ></PropsItems>
       </div>
     </div>
   );

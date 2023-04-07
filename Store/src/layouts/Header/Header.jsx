@@ -1,3 +1,4 @@
+import cart from "../../assets/cart.png";
 import { Link } from "react-router-dom";
 import classnames from "classnames/bind";
 import styles from "./Header.module.scss";
@@ -5,7 +6,7 @@ import { useEffect, useState } from "react";
 import PropsItem from "../PropsItem/Props";
 const cx = classnames.bind(styles);
 function Header() {
-  const array = [1, 2];
+  const array = [1, 2, 4];
   const [product, setProduct] = useState([array]);
   const [sum, setSum] = useState();
   useEffect(() => {
@@ -64,7 +65,7 @@ function Header() {
               </Link>
             </div>
             <div className={cx("navigation")}>
-              <Link to="">
+              <Link to="/catalog">
                 <h5>Catalog</h5>
               </Link>
               <Link to="">
@@ -78,16 +79,16 @@ function Header() {
               </Link>
             </div>
             <div className={cx("cart")}>
-              <label htmlFor="cart">Cart</label>
-              <img
-                src="https://assets.website-files.com/5badda2935e11303a89a461e/5baf75c3bf02346640399fec_cart-icon.svg"
-                alt=""
-              />
-              <Link to="">{sum}</Link>
+              <Link to="">
+                <img src={cart} alt="" />
+              </Link>
+              <div className={cx("sum-products")}>
+                <Link to="">{sum}</Link>
+              </div>
               <div className={cx("menu")}>
                 <Link to="">
                   <img
-                    src="https://img.icons8.com/ios-glyphs/1x/menu-rounded.png"
+                    src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/1x/external-menu-web-flaticons-lineal-color-flat-icons.png"
                     alt=""
                   />
                 </Link>
