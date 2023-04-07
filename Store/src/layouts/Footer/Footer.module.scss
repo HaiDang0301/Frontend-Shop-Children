@@ -5,6 +5,38 @@
     width: 100%;
     height: max-content;
 }
+.photo-grappher{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.children{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-children{
+    width: 87%;
+    height: max-content;
+    display: flex;
+    
+}
+.nav-title{
+    width: 45%;
+    margin-right: auto;
+    height: max-content;
+    color: white
+}
+.nav-image{
+    width: 45%;
+    
+    img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+}
 .colation{
     width: 100%;
     height: max-content;
@@ -13,15 +45,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .subscribe{
     width: 90%;
     height: max-content;
-    background-color: aliceblue;
+    background-color: #0e0e0e;
     border-radius:20px ;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white
 }
 .main{
     height: 100%;
@@ -47,7 +81,7 @@
 }
 .input{
     display: flex;
-    height: 30%;
+    height: 40px;
     width: 50%;
     input{
         height: 100%;
@@ -55,6 +89,7 @@
         border-radius: 20px;
         text-align: center;
         margin-right: 20px;
+        background-color: #0e0e0e;
     }
 }
 .button{
@@ -72,10 +107,10 @@
         transition: all 1s;
     }
     a{
-        color: aliceblue;
+        color: white;
         text-decoration: none;
         &:hover{
-            color: aliceblue;
+            color: white;
         }
     }
 }
@@ -86,48 +121,39 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 500px;
 }
 .title-insta{
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .themes{
     text-align: center;
+    color: white;
     label{
         color: rgb(60, 255, 0);
     }
 }
 .prevew-image{
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.photo{
     width: 90%;
     img{
-        width: 12%;
-        margin: 10px 20px;
+        margin: 10px 0px;
         border-radius: 20px;
-        transform: translateX(-100px),translateY(-100px);
-        transition:2s ease 0s;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available; 
         &:hover{
-            
-            transform:scale(1.1);
-            transition: all 0.5s;
-        }
+        transform: scale(1.1);
+        transition: all 2s;
     }
-}
-.one-img{
-    text-align: center;
+    }
+   
 }
 .mores-photo{
     height: 100px;
@@ -149,10 +175,10 @@
         
     }
     a{
-        color: aliceblue;
+        color: white;
         text-decoration: none;
         &:hover{
-            color: aliceblue;
+            color: white;
         }
     }
 }
@@ -189,8 +215,10 @@
 }
 .bottom-footer{
     width: 90%;
+    color: white;
 }
 .footer-bottom{
+    color: white;
     display: flex;
     align-items: center;
     width: 90%;
@@ -214,7 +242,7 @@
         width: 25px;
         margin: 0px 5px;
         &:hover{
-            background-color: rgb(237, 241, 245);
+            background-color: rgba(65, 67, 68, 0.226);
             border-radius: 20px;
         }
     }
@@ -262,7 +290,9 @@
     }
     .elastic{
         height: max-content;
-        padding-bottom:50% ;
+    }
+    .children{
+        display: none;
     }
 }
 @media only screen and (max-width:302px) {
@@ -294,13 +324,7 @@
     }
 }
 @media only screen and (max-width:185px) {
-    .social{
-        display: none;
-    }
-    .main-subscribe{
-        display: none;
-    }
-    .title-insta{
+    .wrapper{
         display: none;
     }
 }
